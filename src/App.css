@@ -1,0 +1,138 @@
+/* body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+.project {
+  width: 50%;
+  margin: auto;
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+}
+.input input {
+  width: 80%;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.input button {
+  color: red;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+/* style for show buttons */
+.btns-to-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px;
+}
+.btns-to-show button {
+  border: 0;
+  outline: none;
+  padding: 10px 30px; 
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  
+}
+.btns-to-show button:hover{
+  transform: scale(1.05);
+}
+/* style for show buttons */
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.task .done {
+  text-decoration: line-through;
+}
+.task .btns button {
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.task .btns :nth-child(1) {
+  background-color: rgb(81, 230, 81);
+  color: white;
+}
+.task .btns :nth-child(2) {
+  background-color: rgb(255, 48, 48);
+  color: white;
+}
+.task .btns button:hover {
+  scale: 1.2;
+}
